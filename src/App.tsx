@@ -1,10 +1,11 @@
+import Accessibility from "./Accessibility"
 import DropDownProtal from "./DropDownProtal"
 import NativeForm from "./NativeForm"
 import Rerender from "./Rerender"
 import Section from "./Section"
 
-function App<T>() {
-  const teste: T = '';
+function App() {
+
   return (
     <>
       <Section title="Dropdown com portal">
@@ -15,6 +16,9 @@ function App<T>() {
       </Section>
       <Section title="Re-renders desnecessários">
         <Rerender />
+      </Section>
+      <Section title="Acessibilidade">
+        <Accessibility />
       </Section>
     </>
   )

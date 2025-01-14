@@ -1,0 +1,20 @@
+1. Visibility of System Status
+
+Explanation: The system should always keep users informed about what is going on, 
+through appropriate feedback.
+Example: Showing a loading spinner when data is being fetched or a progress bar 
+during file upload.
+
+2. Match Between System and the Real World
+Explanation: The interface should speak the users’ language, using words, 
+phrases, and concepts that are familiar to the user, rather than technical jargon. 
+Follow real-world conventions to make the experience intuitive.
+
+Example: Using icons like a trash can to signify "delete" or a floppy disk for "save."
+
+3. User Control and Freedom
+Explanation: Users often perform actions by mistake. 
+The interface should provide “emergency exits” like undo or redo options, 
+and confirmation dialogs to prevent errors.
+
+Example: A button to cancel or undo actions like deleting a file or sending an email.

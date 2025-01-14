@@ -1,0 +1,141 @@
+callstack
+
+# React questions 
+
+- Closure
+
+A closure is a feature in JavaScript where a function has access to the outer 
+function's scope even after the outer function has finished executing. 
+This means that a function "closes over" variables from its surrounding lexical context, 
+retaining access to those variables even if they are no longer in scope. 
+Closures are commonly used to create private variables, 
+maintain state across function calls, 
+and create functions with encapsulated behavior. 
+They are powerful for managing scope and 
+data privacy.
+
+- Pure function
+
+A pure function is a function that always returns the same result when given the same 
+inputs and doesn't have any side effects. 
+Side effects include modifying external state or data, such as global variables or mutable objects, 
+performing I/O operations, or logging. 
+Pure functions are predictable and easier to reason about because they don't depend on external state, 
+making them ideal for building robust and maintainable code.
+
+**FUNCTIONAL PROGRAMMING** USES FUCNTIONS AS THE UNIT OF COMPOSITION
+
+- PROMISES
+
+A promise in JavaScript is an object representing the eventual 
+completion or failure of an asynchronous 
+operation. It allows you to handle asynchronous operations more easily by providing a 
+cleaner syntax compared to traditional callback-based approaches. 
+A promise can be in one of three states: 
+pending, fulfilled, or rejected.
+
+- TAREFAS ASSÍNMCRONAS
+
+No, JavaScript is primarily single-threaded. 
+This means that it has only one call stack and one memory heap. 
+However, JavaScript environments like web browsers and Node.js can leverage asynchronous 
+programming techniques to handle concurrent tasks effectively without blocking the main thread.
+(web workers)
+
+-CODE SPLITTING 
+
+FALAR DE LAZYLOADING E FILE SEPARADA DO BUNDLE
+
+
+- React is a library
+
+React.js is classified as a library rather than a framework for several fundamental reasons:
+
+Flexibility: While frameworks tend to impose specific structures and patterns for application 
+development, React offers a more flexible approach
+
+"Just the View" Philosophy: One of React's philosophies is "just the view." 
+It doesn't attempt to provide solutions for every aspect of web application development, 
+such as routing, global state management, or data persistence. 
+Instead, it focuses on being a powerful tool for efficient UI rendering and leaves other 
+concerns to other libraries or custom implementation.
+
+
+- Vistual Dom
+
+The Virtual DOM allows React to update the UI efficiently by minimizing DOM manipulations.
+ Instead of directly updating the real DOM for each change, 
+ React first updates a lightweight copy of the DOM (Virtual DOM), 
+ then computes the difference (diffing) between the Virtual DOM and the real DOM, 
+ and finally updates only the necessary parts of the real DOM. 
+ This approach reduces the number of costly DOM operations, 
+ resulting in better performance.
+
+- PureComponent
+
+  PureComponent is essentially a performance optimization tool provided by React, 
+  designed to prevent unnecessary re-renders of a component and its subtree. 
+  It automatically implements a shallow comparison of props and state to determine if a 
+  component needs to re-render. 
+  If the props and state of a PureComponent haven't changed, 
+  React skips the rendering process for that component and its descendants, 
+  resulting in improved performance by avoiding unnecessary rendering cycles.
+
+- HOC
+
+A Higher-Order Component (HOC) in React.js is a function that takes a component and 
+returns a new enhanced component. 
+HOCs are a powerful pattern used for code reuse, 
+logic abstraction, and composition in React applications. 
+They allow you to encapsulate common functionality and share it across 
+multiple components without repeating code
+
+
+- Event loop
+
+To handle asynchronous tasks without blocking the execution of code, 
+JavaScript uses several components that work together:
+
+Call Stack:
+
+The call stack is a data structure that keeps track of the functions being executed 
+in the code. 
+When a function is called, it’s added to the stack. 
+When the function completes, it is removed from the stack.
+JavaScript can only execute one function at a time, 
+so synchronous code will run on the call stack in the order it is called.
+
+Web APIs (Browser APIs):
+
+When asynchronous tasks (like setTimeout, HTTP requests, or DOM events) are triggered, 
+they are handled by the browser’s Web APIs.
+These APIs run in the background (outside the call stack) and don’t 
+block the execution of other code.
+
+Task Queue (Callback Queue):
+
+Once an asynchronous task is completed (e.g., a timer finishes or a network request resolves), 
+the callback associated with the task is added to the task queue 
+(also known as the callback queue).
+This queue holds the callbacks that are ready to be executed 
+but cannot be added to the call stack until the stack is empty.
+
+Event Loop:
+
+The event loop continuously monitors both the call stack and the task queue.
+If the call stack is empty, 
+the event loop takes the first callback from the task queue and pushes 
+it onto the call stack to be executed.
+This process allows asynchronous tasks to be handled in a non-blocking way 
+while maintaining the illusion of synchronicity.
+
+
+
+
+
+
+
+
+
+
+
