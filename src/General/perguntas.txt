@@ -1,0 +1,15 @@
+
+Question 1: What are the biggest technical challenges your team is currently facing?
+
+Reasoning: I’m passionate about problem-solving, and understanding the challenges you’re 
+tackling would help me see how I can contribute effectively.
+
+Question 2: How does your team balance the need for innovation with maintaining technical debt?
+
+Reasoning: Every team faces the challenge of balancing new features with sustainability. 
+I want to understand your approach to handling this balance and how I could contribute to it.
+
+Question 3: How would you describe the culture of experimentation within the team or company?
+
+Reasoning: I value environments that encourage innovation and experimentation. 
+This question allows me to understand if the company promotes creativity and supports trying new approaches.
