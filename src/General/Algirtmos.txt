@@ -94,6 +94,26 @@ const useCustomMemo = (cb, deps) => {
   return answer;
 };
 
+var climbStairs = function(n) {
+    let dictionary = {}
+    
+    const addStep = (step, currentValue) => {
+        const sum = step + currentValue
+        if(sum === n) return 1
+        if(sum > n) return 0
+
+        const key = sum
+        if(dictionary[key] !== undefined) {
+            return dictionary[key]
+        }
+        dictionary[key] = addStep(1, sum, n) + addStep(2, sum, n)
+
+        return dictionary[key]
+    }
+
+    return addStep(1, 0) + addStep(2, 0)
+};
+
 
 # palindrome
 
