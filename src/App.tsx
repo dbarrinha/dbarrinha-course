@@ -1,4 +1,5 @@
 import Accessibility from "./Accessibility"
+import ContextApi from "./ContextApi"
 import DropDownProtal from "./DropDownProtal"
 import NativeForm from "./NativeForm"
 import Rerender from "./Rerender"
@@ -19,6 +20,9 @@ function App() {
       </Section>
       <Section title="Acessibilidade">
         <Accessibility />
+      </Section>
+      <Section title="ContextApi">
+        <ContextApi />
       </Section>
     </>
   )

@@ -1,6 +1,5 @@
 import { memo, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import './DropDownProtal.css'
 
 interface DropDownList {
     open: boolean;
@@ -85,6 +84,7 @@ const DropDownProtal = () => {
                 select-none 
                 w-fit p-2 
                 bg-white
+                text-gray-900
                 hover:bg-violet-600 
                 hover:text-white
                 ${open ? 'rounded-t-md border-b-0 bg-violet-600 text-white' : 'rounded-md'}
